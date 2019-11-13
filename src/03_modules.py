@@ -11,21 +11,33 @@ print("test")
 
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
+print(sys.argv[0])
+# This returns an array that looks like this ['c:/Users/Ronny/Desktop/Lambda/Intro-Python-I/src/03_modules.py']
+# Should I do sys.argv[0]?
+
+for stuff in sys.argv:
+    print(stuff)
+# This one was just for fun
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
+print(sys.platform)
 
 # Print out the version of Python you're using:
 # YOUR CODE HERE
+print(sys.version)
 
 
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
 
 # Print the current process ID
 # YOUR CODE HERE
+print(os.getpid())
 
 # Print the current working directory (cwd):
 # YOUR CODE HERE
+print(os.getcwd())
 
 # Print out your machine's login name
 # YOUR CODE HERE
+print(os.getlogin())
