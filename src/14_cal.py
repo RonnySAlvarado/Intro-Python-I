@@ -23,5 +23,19 @@ import sys
 import calendar
 from datetime import datetime
 
-userinput = input("Input a date in the format of 'month [year]': ")
-print(userinput)
+userinput = input(
+    'Enter either nothing, a month, a year, or both (with spaces between them): ')
+array = userinput.split(' ')
+print(array)
+
+if len(array) == 2:
+    month = int(array[0])
+    year = int(array[1])
+elif len(array) == 1 and array[0] != '':
+    month = int(array[0])
+    year = datetime.today().year
+else:
+    month = datetime.today().month
+    year = datetime.today().year
+
+print(calendar.TextCalendar().formatmonth(year, month))
