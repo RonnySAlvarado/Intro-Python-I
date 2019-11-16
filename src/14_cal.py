@@ -22,3 +22,6 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+userinput = input("Input a date in the format of 'month [year]': ")
+print(userinput)
